@@ -4,7 +4,20 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+  <RegistrarUsuario></RegistrarUsuario>
 </template>
+
+
+<script>
+import RegistrarUsuario from './components/RegistrarUsuario.vue';
+
+export default {
+  name: 'app',
+  components: {
+    RegistrarUsuario
+  }
+}
+</script>
 
 <style>
 #app {
