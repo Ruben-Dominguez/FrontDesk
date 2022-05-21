@@ -123,12 +123,13 @@
 
   .login-body {
     background-color: #ECDFF4;
-    height: 90vh;
+    height: 100vh;
   }
 
   .login-photo {
     width: 500px;
     border-radius: 20px 0 0 20px;
+    z-index: 5;
   }
 
   .login-container {

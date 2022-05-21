@@ -3,11 +3,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <nav>
+  <div class="navigation">
+    <b-navbar fixed="top" sticky="true" toggleable="lg" type="dark" variant="info">
+      <b-navbar-brand href="#"><img src="./assets/images/logo_fimgym.png" alt="logo"></b-navbar-brand>
+    </b-navbar>
+  </div>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/registrar">Registrar Usuario</router-link> |
     <router-link to="/login">Ingresar</router-link>
-  </nav>
+  </nav> -->
   <router-view/>
 </template>
 
@@ -41,4 +46,18 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+img {
+  width: 300px;
+}
+
+.navigation {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+
 </style>
