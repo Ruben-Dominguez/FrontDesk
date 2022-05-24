@@ -1,8 +1,6 @@
 <template>
-<div class="login-body">
-  <div class="container-asset container">
-    <b-col class="padding-0">
-
+<div class="body-color">
+  <div class="caja1">
       <table style="width:90%">
         <tr>
           <th>
@@ -47,17 +45,13 @@
         </tr>
       </table>
 
-
-    </b-col>
   </div>
   <br><br><br>
   <b-button class="button-blank" type="button" variant="light">+ Crear Promoción</b-button>
 
-  <div class="container-asset container">
-    <b-col class="padding-0">
+  <div class="caja2">
       <h1>Campañas</h1>
       <br><br><br><br>
-    </b-col>
   </div>
 
 
@@ -109,53 +103,16 @@ export default {
 
 <style scoped>
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   font-family: 'Roboto', sans-serif;
   color: black;
 }
 
-.padding-0 {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.login-body {
+.body-color {
   background-color: #ECDFF4;
   height: 100vh;
-}
-
-.login-photo {
-  width: 500px;
-  border-radius: 20px 0 0 20px;
-  z-index: 5;
-}
-
-.container-asset {
-  border-radius: 20px;
-  position: static;
-  transform: translate(0%, 55%);
-}
-
-.button-secondary {
-  border-radius: 20px;
   position: relative;
-  top: 70%;
-  left: 3%;
-  transform: translate(-50%, -50%);
-}
-
-.login-col {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0 20px 20px 0;
-}
-
-.form-container {
-  width: 100%;
-  padding: 0 3rem 0 3rem;
 }
 
 h1 {
@@ -193,9 +150,8 @@ input {
 .right {
   text-align: right;
   position: absolute;
-  left: 91.68%;
-
-  top: 9.83%;
+  left: 84.68%;
+  top: 2.83%;
   bottom: 76.23%;
 }
 
@@ -211,80 +167,44 @@ input {
   border-color: #560b7d;
 }
 
-
 th,
 td {
   text-align: left;
 }
 
-
-
 .button-blank {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+
   background: #FFFFFF;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 6px 10px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
   width: 200px;
-  height: 45px;
-  position: relative;
-  border-color: #560b7d;
-  margin: 0px;
-}
-
-.restablecer-button:hover,
-.button-blank:hover {
-  background-color: #ecd0fb;
-  border-color: #560b7d;
-}
-
-
-
-.modal-content {
-  display: flex;
-  align-items: center;
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 35%;
-  border-radius: 16px;
-}
-
-.close-div {
-  display: flex;
-  justify-content: right;
-  width: 100%;
-}
-
-.close {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  width: auto;
   height: auto;
-  padding: .5rem 1rem;
+  border-color: #560b7d;
+  float: right;
+  margin-right: 12%;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.caja1 {
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:3%;
+  background-color: #ffffff;
 }
 
-.restablecer-titulo {
-  padding: .5rem 0 2.5rem 0;
-}
-
-.restablecer-form {
-  width: 72%;
-  margin: 0 0 4rem 0;
-}
-
-#input-3 {
-  width: 100%;
+.caja2 {
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:0px;
+  margin-top:3%;
+  background-color: #ffffff;
 }
 </style>

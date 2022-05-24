@@ -34,6 +34,7 @@ export default {
   color: #2c3e50;
 }
 
+
 nav {
   padding: 30px;
 }
@@ -53,11 +54,13 @@ img {
 
 .navigation {
   background: white;
-  position: fixed;
   width: 100%;
   z-index: 10;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+  
 }
 
-
+div {
+  background-color: #ECDFF4;
+}
 </style>
