@@ -16,7 +16,7 @@
     </div>
   </div>
 
-  <div id="myModal" class="modal" >
+  <div id="myModal" class="modal"  style="overflow-y: scroll;">
     <div class="modal-content">
       <div class="close-div">
         <div class="close">&times;</div>
@@ -24,47 +24,121 @@
       <h3 class="agregar-titulo">Agregar gimnasio</h3>
       <b-form class="agregar-form" @submit="onSubmitAgregar">
         <b-form-group id="input-group-agregar">
-          <b-form inline>
+          <b-container class="bv-example-row">
+            <b-row>
+              <b-col>
+                <label >Nombre</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="nombreGimnasio"
+                  type="text"
+                  placeholder="Ingresa el nombre"
+                  required
+                ></b-form-input>
 
-            <label>Nombre</label>
-            <b-form-input
-              id="input-3"
-              v-model="emailNuevo"
-              type="email"
-              placeholder="Ingresa tu correo electrónico"
-              required
-            ></b-form-input>
-            
-            <label>Telefono</label>
-            <b-form-input
-              id="input-3"
-              v-model="emailNuevo"
-              type="email"
-              placeholder="Ingresa tu correo electrónico"
-              required
-            ></b-form-input>
-            
-            <label>Mensualidad</label>
-            <b-form-input
-              id="input-3"
-              v-model="emailNuevo"
-              type="email"
-              placeholder="Ingresa tu correo electrónico"
-              required
-            ></b-form-input>
+                <label >Dirección #Casa</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="direccionGimnasio"
+                  type="text"
+                  placeholder="Ingresa la dirección"
+                  required
+                ></b-form-input>
 
-          </b-form>
+                <label >Colonia</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="coloniaGimnasio"
+                  type="text"
+                  placeholder="Ingresa la colonia"
+                  required
+                ></b-form-input>
 
-          <label>Direccion #Casa</label>
-          <b-form-input
-            id="input-3"
-            v-model="emailNuevo"
-            type="email"
-            placeholder="Ingresa tu correo electrónico"
-            required
-          ></b-form-input>
+                <label >Estado</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="estadoGimnasio"
+                  type="text"
+                  placeholder="Ingresa el estado"
+                  required
+                ></b-form-input>
 
-          
+                <label >Aforo total</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="aforoGimnasio"
+                  type="number"
+                  placeholder="Ingresa el aforo total"
+                  required
+                ></b-form-input>
+              </b-col>
+              <b-col>
+                <label>Número de télefono</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="telefonoGimnasio"
+                  type="tel"
+                  placeholder="Ingresa el número de télefono"
+                  required
+                ></b-form-input>
+
+                <label>País</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="paisGimnasio"
+                  type="text"
+                  placeholder="Ingresa el país"
+                  required
+                ></b-form-input>
+
+                <label>Código postal</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="cpGimnasio"
+                  type="text"
+                  placeholder="Ingresa el código postal"
+                  required
+                ></b-form-input>
+
+                <label>Ciudad</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="ciudadGimnasio"
+                  type="text"
+                  placeholder="Ingresa la ciudad"
+                  required
+                ></b-form-input>
+
+                <label>Aforo permitido</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="aforoGimnasio"
+                  type="number"
+                  placeholder="Ingresa el aforo permitido"
+                  required
+                ></b-form-input>
+              </b-col>
+              <b-col>
+                <label>Mensualidad</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="mensualidadGimnasio"
+                  type="text"
+                  placeholder="Ingresa la mensualidad"
+                  required
+                ></b-form-input>
+
+                <label>Fotografia</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="fotografiaGimnasio"
+                  type="image"
+                  placeholder=""
+                  required
+                ></b-form-input>
+              </b-col>
+            </b-row>
+          </b-container>
         </b-form-group>
         <b-button class="restablecer-button" type="submit" variant="primary">Enviar</b-button>
       </b-form>
@@ -270,10 +344,7 @@
   }
 
   #input-3 {
-    width: 33%;
+    width: auto%;
   }
-
-
-
-
+  
 </style>
