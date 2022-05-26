@@ -79,6 +79,10 @@
     mounted() {
       var modal = document.getElementById("myModal");
       var span = document.getElementsByClassName("close")[0];
+      var control = document.getElementsByClassName("navigation-cont")[0];
+      var navbar = document.getElementsByClassName("NavBar")[0];
+      control.style.justifyContent = "center";
+      navbar.style.display = 'none';
 
       span.onclick = function() {
         modal.style.display = "none";
@@ -94,6 +98,13 @@
       onSubmit(event) {
         event.preventDefault()
         alert(JSON.stringify(this.form))
+        var control = document.getElementsByClassName("navigation-cont")[0];
+        var navbar = document.getElementsByClassName("NavBar")[0];
+        control.style.justifyContent = "space-between";
+        navbar.style.display = 'flex';
+        this.$store.state.users.push({"username": this.$data.form.email});
+        this.$store.state.numUsers = this.$store.state.numUsers + 1;
+        this.$router.push('/socio/')
       },
       onSubmitRestablecer(event) {
         event.preventDefault()
@@ -183,9 +194,16 @@
   }
 
   .restablecer-button:hover,
-  .login-button:hover {
+  .login-button:hover,
+  .restablecer-button:focus,
+  .login-button:focus {
     background-color: #560b7d;
     border-color: #560b7d;
+  }
+
+  .form-control:focus {
+    border-color: rgb(86 11 125 / 25%);
+    box-shadow: 0 0 0 0.25rem rgb(141 43 192 / 25%);
   }
 
   .password-forget-button {
