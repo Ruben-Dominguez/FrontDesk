@@ -1,12 +1,38 @@
+
 <template>
-  <nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <div class="navigation">
+    <b-navbar class="navigation-cont" fixed="top" sticky="true" toggleable="lg" type="dark" variant="info">
+      <b-navbar-brand class="logoBrand" href="#"><img src="./assets/images/logo_fimgym.png" alt="logo"></b-navbar-brand>
+      <NavBar class="NavBar" />
+    </b-navbar>
+  </div>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+    <router-link to="/registrar">Registrar Usuario</router-link> |
+    <router-link to="/login">Ingresar</router-link>
+  </nav> -->
+  
   <router-view/>
 </template>
 
+<script>
+
+import NavBar from './components/NavBar.vue';
+
+export default {
+  name: 'app',
+  components: {
+    NavBar
+  }
+
+}
+</script>
+
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +53,34 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+img {
+  width: 300px;
+}
+
+.navigation {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .70);
+}
+
+.navigation-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar {
+  display: none;
+}
+
+.nav-link {
+  color: black !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
 </style>
