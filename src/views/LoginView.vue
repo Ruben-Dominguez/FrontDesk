@@ -97,14 +97,13 @@
     methods: {
       onSubmit(event) {
         event.preventDefault()
-        alert(JSON.stringify(this.form))
         var control = document.getElementsByClassName("navigation-cont")[0];
         var navbar = document.getElementsByClassName("NavBar")[0];
         control.style.justifyContent = "space-between";
         navbar.style.display = 'flex';
         this.$store.state.users.push({"username": this.$data.form.email});
         this.$store.state.numUsers = this.$store.state.numUsers + 1;
-        this.$router.push('/socio/')
+        this.$router.push('/gimnasios/')
       },
       onSubmitRestablecer(event) {
         event.preventDefault()

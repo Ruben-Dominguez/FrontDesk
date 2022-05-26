@@ -5,12 +5,14 @@ import SociosView from '../views/SociosView.vue'
 import PromotionalCampaignView from '../views/PromotionalCampaignView.vue'
 import AddCampaignView from '../views/AddCampaignView.vue'
 import GimnasiosView from '../views/GimnasiosView.vue'
+import CuentasView from '../views/CuentasView.vue'
 //import MembresiasView from '../views/MembresiasView.vue'
 //import EquipamientosView from '../views/EquipamientosView.vue'
 
 const routes = [
   {path: '/registrar', name: 'RegistrarUsuario',component: RegistrarUsuario},
   {path: '/', name: 'Login',component: LoginView},
+  {path: '/cuentas', name: 'Cuentas',component: CuentasView},
   {path: '/socio', name: 'Socio',component: SociosView},
   {path: '/campaign', name: 'PromotionalCampaign',component: PromotionalCampaignView},
   {path: '/campaign-add', name: 'AddCampaign',component: AddCampaignView},

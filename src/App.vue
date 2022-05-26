@@ -5,16 +5,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <div class="navigation">
     <b-navbar class="navigation-cont" toggleable="lg">
-      <b-navbar-brand class="logoBrand" href="#"><img src="./assets/images/logo_fimgym.png" alt="logo"></b-navbar-brand>
+      <b-navbar-brand class="logoBrand" onclick='window.location.href="/"'><img src="./assets/images/logo_fimgym.png" alt="logo"></b-navbar-brand>
       <NavBar class="NavBar" />
     </b-navbar>
   </div>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/registrar">Registrar Usuario</router-link> |
-    <router-link to="/login">Ingresar</router-link>
-  </nav> -->
-  
   <router-view/>
 </template>
 
@@ -41,7 +35,6 @@ export default {
   color: #2c3e50;
 }
 
-
 nav {
   padding: 30px;
 }
@@ -57,6 +50,11 @@ nav a.router-link-exact-active {
 
 img {
   width: 300px;
+}
+
+.logoBrand {
+  cursor: pointer;
+  padding-left: 1.2rem;
 }
 
 .navigation {
