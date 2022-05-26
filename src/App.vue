@@ -4,7 +4,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <div class="navigation">
-    <b-navbar class="navigation-cont" fixed="top" sticky="true" toggleable="lg" type="dark" variant="info">
+    <b-navbar class="navigation-cont" toggleable="lg">
       <b-navbar-brand class="logoBrand" href="#"><img src="./assets/images/logo_fimgym.png" alt="logo"></b-navbar-brand>
       <NavBar class="NavBar" />
     </b-navbar>
@@ -41,6 +41,7 @@ export default {
   color: #2c3e50;
 }
 
+
 nav {
   padding: 30px;
 }
@@ -59,8 +60,9 @@ img {
 }
 
 .navigation {
-  background: white;
   position: fixed;
+  top: 0px;
+  background: white;
   width: 100%;
   z-index: 10;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, .70);
@@ -80,7 +82,6 @@ img {
   color: black !important;
   font-weight: 600;
   font-size: 1.2rem;
+  
 }
-
-
 </style>
