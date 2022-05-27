@@ -13,8 +13,8 @@
       </div>
       <b-form class="separador" @submit="onSubmit">
         <input placeholder="Nombre" type="text" class="campo" required>
-        <input placeholder="Correo Electrónico" type="email" class="campo" required>
         <b-form-select v-model="selected" :options="options" class="campo" required></b-form-select>
+        <input placeholder="Correo Electrónico" type="email" class="campo" required>
         <div class="but-cont">
           <b-button class="cancel-button btn" variant="primary" onclick='window.location.href="/cuentas"'>Cancelar</b-button>
           <b-button class="subbmit-button btn" type="submit" variant="primary">Agregar</b-button>
@@ -185,7 +185,8 @@ input {
 }
 
 #fotito {
-  width: 50%;
+  width: 20rem;
+  margin-bottom: 1.5rem;
 }
 
 .separador,

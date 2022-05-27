@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <div class="navigation">
     <b-navbar class="navigation-cont" toggleable="lg">
-      <b-navbar-brand class="logoBrand" onclick='window.location.href="/"'><img src="./assets/images/logo_fimgym.png" alt="logo"></b-navbar-brand>
+      <b-navbar-brand class="logoBrand" onclick='window.location.href="/"'><img id="logo" src="./assets/images/logo_fimgym.png" alt="logo"></b-navbar-brand>
       <NavBar class="NavBar" />
     </b-navbar>
   </div>
@@ -48,7 +48,7 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 
-img {
+#logo {
   width: 300px;
 }
 

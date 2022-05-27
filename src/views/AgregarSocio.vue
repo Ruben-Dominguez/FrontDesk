@@ -2,7 +2,7 @@
 <div class="body-color">
   <div class="caja">
 
-    <h1 class="title">Agregar Nueva Cuenta</h1><br><br>
+    <h1 class="title">Agregar Nueva Cuenta de Socio</h1><br><br>
     <svg onclick="window.location.href='/cuentas'" class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path onclick="window.location.href='/cuentas'" d="M22 2L2 22M22 22L2 2L22 22Z" stroke="black" stroke-width="2.5" stroke-linecap="round" />
     </svg>
@@ -10,11 +10,21 @@
     <div class="columnas">
       <div class="separador-foto">
         <img id="fotito" src="../assets/images/no-img.png">
+        <input placeholder="Fecha de Nacimiento" type="date" class="campo" required>
+        <b-form-select v-model="selectedGender" :options="optionsGender" class="campo" required></b-form-select>
+        <input placeholder="Dirección" type="text" class="campo" required>
+        <input placeholder="Número de Celular" type="tel" class="campo" required>
+        <input placeholder="Membresía" type="text" class="campo" required>
       </div>
       <b-form class="separador" @submit="onSubmit">
         <input placeholder="Nombre" type="text" class="campo" required>
+        <b-form-select v-model="selected" :options="options" class="campo" disabled></b-form-select>
         <input placeholder="Correo Electrónico" type="email" class="campo" required>
-        <b-form-select v-model="selected" :options="options" class="campo" required></b-form-select>
+        <input placeholder="Minutos de Antelación" type="number" class="campo" required>
+        <input placeholder="Fecha de Ingreso" type="date" class="campo" required>
+        <input placeholder="Fecha de Corte" type="date" class="campo" required>
+        <input placeholder="Referenciado por" type="text" class="campo" required>
+        <b-form-select v-model="selectedStatus" :options="optionsStatus" class="campo" required></b-form-select>
         <div class="but-cont">
           <b-button class="cancel-button btn" variant="primary" onclick='window.location.href="/cuentas"'>Cancelar</b-button>
           <b-button class="subbmit-button btn" type="submit" variant="primary">Agregar</b-button>
@@ -35,6 +45,17 @@ export default {
         { value: 'socio', text: 'Socio' },
         { value: 'recepcion', text: 'Recepción' },
         { value: 'intructor', text: 'Instructor'}
+      ],
+      selectedGender: null,
+      optionsGender: [
+        { value: null, text: 'Select' },
+        { value: 'femenino', text: 'Femenino' },
+        { value: 'masculino', text: 'Masculino'}
+      ],
+      selectedStatus: 'activo',
+      optionsStatus: [
+        { value: 'activo', text: 'Activo' },
+        { value: 'inactivo', text: 'Inactivo'}
       ]
     }
   },
@@ -80,7 +101,7 @@ export default {
 
 .body-color {
   background-color: #ECDFF4;
-  height: 100vh;
+  height: auto;
   position: relative;
   padding-top: 8rem;
 }
@@ -185,7 +206,8 @@ input {
 }
 
 #fotito {
-  width: 50%;
+  width: 20rem;
+  margin-bottom: 1.5rem;
 }
 
 .separador,
