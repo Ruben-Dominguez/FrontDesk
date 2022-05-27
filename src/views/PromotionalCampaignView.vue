@@ -272,7 +272,6 @@ input {
   border-radius: 16px;
 }
 
-
 .close {
   float: right;
   color: #aaa;
