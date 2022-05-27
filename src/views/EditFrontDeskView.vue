@@ -12,7 +12,7 @@
       <path d="M22.75 18.1035V27.9782" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   </div>
-  <div class="submenu2" onclick='window.location.href="/frontdesk-edit"'>
+  <div class="submenu2">
     <h4 class="fix-submenu">Editar Cuenta</h4>
     <svg class="vector_edit" width="25" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -33,53 +33,60 @@
 <div class="body-color">
 
   <div class="caja">
-    <h1>Información De La Cuenta Recepción</h1>
-    <div class="form-container">
-      <b-form class="form-campos" @submit="onSubmit">
-        <div class="box_left">
+    <div class="content">
+      <h1>Información De La Cuenta Recepción</h1>
+      <div class="form-container">
+        <b-form class="form-campos" @submit="onSubmit">
+          <div class="box_left">
+            <div class="clearfix"></div>
+            <label>Nombre</label><br>
+            <input v-model="form.nombre" type="text" class="campo" placeholder="Rodrigo Roberto Hernandez Estrada">
+          </div>
+          <div class="box_right">
+            <label class="left">Correo electrónico</label>
+            <input v-model="form.correo" class="campo left" type="text" placeholder="rodrigo.estrada@gmail.com">
+          </div>
           <div class="clearfix"></div>
-          <label>Nombre</label><br>
-          <input type="text" class="campo" value="Rodrigo Roberto Hernandez Estrada" readonly>
-        </div>
-        <div class="box_right">
-          <label class="left">Correo electrónico</label>
-          <input class="campo left" type="text" value="rodrigo.estrada@gmail.com" readonly>
-        </div>
-        <div class="clearfix"></div>
-        <div class="box_left">
-          <label>Dirección</label><br>
-          <input class="campo" type="text" value="Campo de los Girasoles #454" readonly>
-        </div>
-        <div class="box_right">
-          <label class="left">Télefono</label><br>
-          <input type="text" class="campo left" value="6142584563" readonly>
-        </div>
-        <div class="clearfix"></div>
-        <div class="box_left">
-          <label>Fecha de Nacimiento</label><br>
-          <input class="campo" type="text" value="01/05/2000" readonly>
-        </div>
-        <div class="box_right">
-          <label class="left">Género</label><br>
-          <input type="text" class="campo left" value="Másculino" readonly>
-        </div>
-        <div class="clearfix"></div>
-        <div class="box_left">
-          <label>Tipo de Usuario</label><br>
-          <input class="campo" type="text" value="FrontDesk" readonly>
-        </div>
-        <div class="box_right">
-          <label class="left">Fecha de Ingreso</label><br>
-          <input type="text" class="campo left" value="07/03/2021" readonly>
-        </div>
-        <div class="clearfix"></div>
+          <div class="box_left">
+            <label>Dirección</label><br>
+            <input v-model="form.direccion" class="campo" type="text" placeholder="Campo de los Girasoles #454">
+          </div>
+          <div class="box_right">
+            <label class="left">Télefono</label><br>
+            <input v-model="form.telefono" type="text" class="campo left" placeholder="6142584563">
+          </div>
+          <div class="clearfix"></div>
+          <div class="box_left">
+            <label>Fecha de Nacimiento</label><br>
+            <input v-model="form.fNacimiento" class="campo" type="text" placeholder="01/05/2000" onfocus="(this.type = 'date')" id="date">
+          </div>
+          <div class="box_right">
+            <label class="left">Género</label><br>
+            <input v-model="form.genero" type="text" class="campo left" placeholder="Másculino">
+          </div>
+          <div class="clearfix"></div>
+          <div class="box_left">
+            <label>Tipo de Usuario</label><br>
+            <input class="campo" type="text" value="FrontDesk" readonly>
+          </div>
+          <div class="box_right">
+            <label class="left">Fecha de Ingreso</label><br>
+            <input v-model="form.fIngreso" type="text" class="campo left" placeholder="07/03/2021" onfocus="(this.type = 'date')" id="date">
+          </div>
+          <div class="clearfix"></div>
 
-        <br>
-      </b-form>
+          <br>
+        </b-form>
+      </div>
+      <img src="../assets/images/persona.png">
+
     </div>
-    <img src="../assets/images/persona.png">
     <div class="clearfix"></div>
-
+    <div class="botones">
+      <b-button class="subbmit-button2" @click="onSubmit" type="submit" variant="primary">Guardar</b-button>
+      <b-button class="cancel-button2" type="submit" variant="primary" @click="cancelar">Cancelar</b-button>
+    </div>
+    <div class="clearfix"></div>
   </div>
   <div id="myModal" class="modal">
     <div class="modal-content">
@@ -89,7 +96,6 @@
       <div class="clearfix"></div>
       <h3 class="restablecer-titulo">¿Estás seguro de eliminar la cuenta?</h3>
       <div class="clearfix"></div>
-      <br>
       <b-button class="cancel-button" type="submit" variant="primary" @click="close">Cancelar</b-button>
       <b-button class="subbmit-button" type="submit" variant="primary" @click="eliminar">Eliminar</b-button>
       <div class="clearfix"></div>
@@ -105,8 +111,14 @@ export default {
   data() {
     return {
       form: {
-        email: '',
-        password: ''
+        nombre: '',
+        correo: '',
+        direccion: '',
+        telefono: '',
+        fNacimiento: '',
+        genero: '',
+        tUser: 'FrontDesk',
+        fIngreso: ''
       },
       emailNuevo: ''
     }
@@ -139,6 +151,10 @@ export default {
       var modal = document.getElementById("myModal");
       modal.style.display = "block";
     },
+    cancelar(event) {
+      event.preventDefault()
+      location.href = "/frontdesk";
+    },
     close(event) {
       event.preventDefault()
       var modal = document.getElementById("myModal");
@@ -148,7 +164,7 @@ export default {
       event.preventDefault()
       var modal = document.getElementById("myModal");
       alert("Cuenta Eliminada Correctamente!");
-      location.href="/cuentas";
+      location.href = "/cuentas";
       modal.style.display = "none";
     }
   }
@@ -197,16 +213,15 @@ export default {
   float: right;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-right: 3.5px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: 30px;
-}
-
-.submenu2:hover {
-  cursor: pointer;
   margin-top: 2px;
   margin-bottom: 1px;
-  background-color: #ecd0fb;
+  background-color: #78FF62;
+  border-radius: 30px;
 }
+
 
 .submenu3 {
   position: relative;
@@ -260,11 +275,23 @@ export default {
 .body-color {
   top: 100px;
   background-color: #ECDFF4;
-  height: 100vh;
+  height: 110vh;
   position: relative;
   padding-top: 4rem;
 
 }
+
+.content{
+  display:block;
+  position:center;
+}
+.botones{
+  display:block;
+  position:right;
+}
+
+
+
 
 img {
   display: inline-block;
@@ -363,6 +390,7 @@ input {
   float: left;
   width: 70%;
   margin-top: 2.7%;
+  margin-bottom: -30px;
 }
 
 .right {
@@ -413,8 +441,8 @@ td {
   width: 82%;
   height: auto;
   margin-left: 10%;
-  margin-top: 1.4%;
-  margin-right: 10%;
+  margin-top: 1%;
+  margin-right: 20%;
   background-color: #ffffff;
 }
 
@@ -439,6 +467,21 @@ table {
   font-size: 1.2rem;
 }
 
+.cancel-button2 {
+  background-color: #FFFFFF;
+  border-color: #8D2BC0;
+  border-radius: 8px;
+  color: #757575;
+  float: right;
+  width: 220px;
+  height: 50px;
+  margin-right: 2%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 1%;
+}
+
 .subbmit-button {
   display: inline;
   float: center;
@@ -453,6 +496,22 @@ table {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+}
+
+.subbmit-button2 {
+  background-color: #8D2BC0;
+  border-color: #8D2BC0;
+  border-radius: 8px;
+  color: white;
+  float: right;
+  margin-right: 0px;
+  width: 220px;
+  height: 50px;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
 }
 
 .cancel-button:hover {
