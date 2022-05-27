@@ -14,7 +14,7 @@
           <p>{{this.$store.state.users[0].tipo.charAt(0).toUpperCase() + this.$store.state.users[0].tipo.slice(1)}}</p>
         </div>
       </div>
-      <div class="cajahijo3">
+      <div class="cajahijo3" onclick='window.location.href="/instructor"'>
         <img class="info-img round" src="../assets/images/persona.png">
         <div class="cajahijo4">
           <h2>{{this.$store.state.users[1].username}}</h2>

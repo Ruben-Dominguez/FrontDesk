@@ -16,7 +16,8 @@ import FrontDeskView from '../views/FrontDeskView.vue'
 import MembresiasView from '../views/MembresiasView.vue'
 import EquipamientosView from '../views/EquipamientosView.vue'
 import EditFrontDeskView from '../views/EditFrontDeskView.vue'
-
+import InstructorView from '../views/InstructorView.vue'
+import EditInstructorView from '../views/EditInstructorView.vue'
 
 const routes = [
   {path: '/registrar', name: 'RegistrarUsuario',component: RegistrarUsuario},
@@ -34,7 +35,9 @@ const routes = [
   {path: '/gimnasios', name: 'Gimnasios',component: GimnasiosView},
   {path: '/frontdesk', name: 'FrontDeskInfo',component: FrontDeskView},
   {path: '/frontdesk-edit', name: 'FrontDeskEdit',component: EditFrontDeskView},
+  {path: '/instructor', name: 'InstructorView',component: InstructorView},
   {path: '/membresias', name: 'Membresias',component: MembresiasView},
+  {path: '/instructor-edit', name: 'InstructorEdit',component: EditInstructorView},
   {path: '/equipamientos', name: 'Equipamientos',component: EquipamientosView},
 ]
 
