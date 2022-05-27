@@ -6,7 +6,6 @@ import PromotionalCampaignView from '../views/PromotionalCampaignView.vue'
 import AddCampaignView from '../views/AddCampaignView.vue'
 import EditCampaignView from '../views/EditCampaignView.vue'
 import GimnasiosView from '../views/GimnasiosView.vue'
-import FrontDeskView from '../views/FrontDeskView.vue'
 //import MembresiasView from '../views/MembresiasView.vue'
 //import EquipamientosView from '../views/EquipamientosView.vue'
 
@@ -19,7 +18,6 @@ const routes = [
   {path: '/campaign-add', name: 'AddCampaign',component: AddCampaignView},
     {path: '/campaign-edit', name: 'EditCampaign',component: EditCampaignView},
   {path: '/gimnasios', name: 'Gimnasios',component: GimnasiosView},
-  {path: '/frontdesk', name: 'FrontDesk',component: FrontDeskView},
   //{path: '/membresias', name: 'Membresias',component: MembresiasView},
   //{path: '/equipamientos', name: 'Equipamientos',component: EquipamientosView},
 ]
