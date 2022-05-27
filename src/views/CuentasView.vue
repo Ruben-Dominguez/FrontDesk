@@ -3,7 +3,7 @@
   <div class="caja">
     <div class="cajahijo1">
       <input id="lookup" class="campo" type="text">
-      <b-button class="button-blank" type="button" variant="light" onclick='window.location.href="/campaign-add"'>+ Crear Promoción</b-button>
+      <b-button class="button-blank" type="button" variant="light" onclick='window.location.href="/cuentas-add"'>+ Nueva Cuenta</b-button>
     </div>
 
     <div class="cajahijo2">
@@ -109,7 +109,6 @@ input {
 
 .caja {
   border-radius: 50px;
-  width: 82%;
   height: auto;
   margin-left: 10%;
   margin-right: 10%;
