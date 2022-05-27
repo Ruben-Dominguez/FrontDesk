@@ -13,11 +13,11 @@
       </div>
       <b-form class="separador" @submit="onSubmit">
         <label>Nombre</label>
-        <input placeholder="Nombre" type="text" class="campo" required>
+        <input placeholder="Nombre" type="text" class="campo" v-model="this.$store.state.passed.name" required>
         <label>Tipo de Usuario</label>
         <b-form-select v-model="selected" :options="options" class="campo" required></b-form-select>
         <label>Correo Electrónico</label>
-        <input placeholder="Correo Electrónico" type="email" class="campo" required>
+        <input placeholder="Correo Electrónico" type="email" class="campo" v-model="this.$store.state.passed.email" required>
         <div class="but-cont">
           <b-button class="cancel-button btn" variant="primary" onclick='window.location.href="/cuentas"'>Cancelar</b-button>
           <b-button class="subbmit-button btn" type="submit" variant="primary">Agregar</b-button>
@@ -58,7 +58,13 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault()
-      this.$router.push('/cuentas/')
+      if(this.$data.selected == "socio") {
+        this.$router.push('/cuentas-add-socio/');
+      } else if(this.$data.selected == "recepcion") {
+        this.$router.push('/cuentas-add-frontdesk/')
+      } else {
+        this.$router.push('/cuentas-add-instructor/')
+      }
     },
     onSubmitRestablecer(event) {
       event.preventDefault()

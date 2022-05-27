@@ -2,7 +2,7 @@
 <div class="body-color">
   <div class="caja">
 
-    <h1 class="title">Agregar Nueva Cuenta de Instructor</h1><br><br>
+    <h1 class="title">Agregar Nueva Cuenta Recepción</h1><br><br>
     <svg onclick="window.location.href='/cuentas'" class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path onclick="window.location.href='/cuentas'" d="M22 2L2 22M22 22L2 2L22 22Z" stroke="black" stroke-width="2.5" stroke-linecap="round" />
     </svg>
@@ -10,14 +10,12 @@
     <div class="columnas">
       <div class="separador-foto">
         <img id="fotito" src="../assets/images/no-img.png">
+        <label>Fecha de Nacimiento</label>
+        <input placeholder="Fecha de Nacimiento" type="date" class="campo" required>
         <label>Dirección</label>
         <input placeholder="Dirección" type="text" class="campo" required>
-        <label>Número de Celular</label>
-        <input placeholder="Número de Celular" type="tel" class="campo" required>
-        <label>Horario de Trabajo</label>
-        <textarea id="horario" placeholder="Lunes:&#10;Martes:&#10;Miercoles:&#10;Jueves:&#10;Viernes:&#10;Sabado:&#10;Domingo:&#10;" type="text" style="resize:none" class="campo description"></textarea>
-        <label>Lista de Objetivos de Entrenamiento</label>
-        <textarea id="objetivos" placeholder="Lista de Objetivos de Entrenamiento" type="text" style="resize:none" class="campo description"></textarea>
+        <label>Membresía</label>
+        <input placeholder="Membresía" type="text" class="campo" required>
       </div>
       <b-form class="separador" @submit="onSubmit">
         <label>Nombre</label>
@@ -26,14 +24,10 @@
         <b-form-select v-model="selected" :options="options" class="campo" disabled></b-form-select>
         <label>Correo Electrónico</label>
         <input placeholder="Correo Electrónico" type="email" class="campo" v-model="this.$store.state.passed.email" required>
+        <label>Número de Celular</label>
+        <input placeholder="Número de Celular" type="tel" class="campo" required>
         <label>Fecha de Ingreso</label>
-        <input placeholder="Fecha de Ingreso" type="date" class="campo" required>
-        <label>Fecha de Certificación</label>
         <input placeholder="Fecha de Corte" type="date" class="campo" required>
-        <label>Referenciado por</label>
-        <input placeholder="Referenciado por" type="text" class="campo" required>
-        <label>Estatus</label>
-        <b-form-select v-model="selectedStatus" :options="optionsStatus" class="campo" required></b-form-select>
         <div class="but-cont">
           <b-button class="cancel-button btn" variant="primary" onclick='window.location.href="/cuentas"'>Cancelar</b-button>
           <b-button class="subbmit-button btn" type="submit" variant="primary">Agregar</b-button>
@@ -49,11 +43,11 @@
 export default {
   data() {
     return {
-      selected: 'instructor',
+      selected: 'recepcion',
       options: [
         { value: 'socio', text: 'Socio' },
         { value: 'recepcion', text: 'Recepción' },
-        { value: 'instructor', text: 'Instructor'}
+        { value: 'intructor', text: 'Instructor'}
       ],
       selectedGender: null,
       optionsGender: [
@@ -239,16 +233,11 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
 }
 
 .btn{
   margin: 2rem;
-}
-
-#objetivos,
-#horario {
-  height: 12rem;
 }
 
 label {

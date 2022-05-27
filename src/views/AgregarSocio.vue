@@ -25,11 +25,11 @@
       </div>
       <b-form class="separador" @submit="onSubmit">
         <label>Nombre</label>
-        <input placeholder="Nombre" type="text" class="campo" required>
+        <input placeholder="Nombre" type="text" class="campo" v-model="this.$store.state.passed.name" required>
         <label>Tipo de Usuario</label>
         <b-form-select v-model="selected" :options="options" class="campo" disabled></b-form-select>
         <label>Correo Electrónico</label>
-        <input placeholder="Correo Electrónico" type="email" class="campo" required>
+        <input placeholder="Correo Electrónico" type="email" class="campo" v-model="this.$store.state.passed.email" required>
         <label>Minutos de Antelación</label>
         <input placeholder="Minutos de Antelación" type="number" class="campo" required>
         <label>Fecha de Ingreso</label>
