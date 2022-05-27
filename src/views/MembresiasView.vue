@@ -3,13 +3,67 @@
     <div class="gym-container container">
       <b-row>
         <b-col class="gym-col padding-0">
-          <h1>Membresias</h1>
-          
+          <div class="btn-group btn-group-justified">
+            <h1>Membresias</h1>
+            <div class="form-container" id="new-gym-button">
+              <b-button class="new-gym" variant="light" @click="show">Nueva membresía</b-button>
+            </div>
+          </div>
+          <div id="gimnasios">
+            
+          </div>
         </b-col>
       </b-row>
     </div>
   </div>
 
+  <div id="myModal" class="modal"  style="overflow-y: scroll;">
+    <div class="modal-content">
+      <div class="close-div">
+        <div class="close">&times;</div>
+      </div>
+      <h3 class="agregar-titulo">Agregar nueva membresía</h3>
+      <b-form class="agregar-form" @submit="onSubmitAgregar">
+        <b-form-group id="input-group-agregar">
+          <b-container class="bv-example-row">
+            <b-row>
+              <b-col>
+                <label >Nombre</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="nombreGimnasio"
+                  type="text"
+                  placeholder="Ingresa el nombre"
+                  required
+                ></b-form-input>
+
+                <label >Porcentaje de descuento</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="direccionGimnasio"
+                  type="text"
+                  placeholder="Ingresa la dirección"
+                  required
+                ></b-form-input>
+
+                <label >Periodicidad</label>
+                <b-form-input
+                  id="input-3"
+                  v-model="coloniaGimnasio"
+                  type="text"
+                  placeholder="Ingresa la colonia"
+                  required
+                ></b-form-input>
+
+              </b-col>
+              
+            </b-row>
+          </b-container>
+        </b-form-group>
+        <b-button class="restablecer-button" type="submit" variant="primary">Agregar</b-button>
+      </b-form>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -125,7 +179,7 @@
   }
 
   .restablecer-button {
-    width: 100%;
+    width: 30%;
   }
 
   .restablecer-button,
@@ -162,7 +216,7 @@
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 70%; 
+    width: 40%; 
     border-radius: 16px;
   }
 
@@ -201,6 +255,8 @@
     width: 100%;
   }
 
+  #gimnasios{
 
+  }
 
 </style>
