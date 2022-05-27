@@ -144,27 +144,27 @@
                 <label >Fotografía</label>
                 <b-form-input
                   id="input-3"
-                  v-model="nombreGimnasio"
-                  type="text"
-                  placeholder="Ingresa el nombre"
+                  v-model="fotografíaEquipo"
+                  type="image"
+                  placeholder="Inserta una fotografia fotografía"
                   required
                 ></b-form-input>
 
-                <label >Nombre de la máquina</label>
+                <label >Nombre del equipo</label>
                 <b-form-input
                   id="input-3"
-                  v-model="direccionGimnasio"
+                  v-model="nombreEquipo"
                   type="text"
-                  placeholder="Ingresa la dirección"
+                  placeholder="Ingresa el nombre"
                   required
                 ></b-form-input>
 
                 <label > Periodo de mentenimiento</label>
                 <b-form-input
                   id="input-3"
-                  v-model="coloniaGimnasio"
+                  v-model="periodoEquipo"
                   type="text"
-                  placeholder="Ingresa la colonia"
+                  placeholder="Ingresa el periodo de mantenimiento"
                   required
                 ></b-form-input>
 
@@ -173,36 +173,36 @@
                 <label>Tipo de equipo</label>
                 <b-form-input
                   id="input-3"
-                  v-model="telefonoGimnasio"
-                  type="tel"
-                  placeholder="Ingresa el número de télefono"
+                  v-model="tipoEquipo"
+                  type="text"
+                  placeholder="Ingresa el tipo de equipo"
                   required
                 ></b-form-input>
 
                 <label>Frecuencia de mantenimiento</label>
                 <b-form-input
                   id="input-3"
-                  v-model="paisGimnasio"
+                  v-model="frecuenciaEquipo"
                   type="text"
-                  placeholder="Ingresa el país"
+                  placeholder="Ingresa la frecuencia del mantenimiento"
                   required
                 ></b-form-input>
 
-                <label>Múculo que se trabaja</label>
+                <label>Músculo que se trabaja</label>
                 <b-form-input
                   id="input-3"
                   v-model="cpGimnasio"
                   type="text"
-                  placeholder="Ingresa el código postal"
+                  placeholder="Ingresa el músculo que se trabaja"
                   required
                 ></b-form-input>
 
-                <label>Grupo mucular</label>
+                <label>Grupo muscular</label>
                 <b-form-input
                   id="input-3"
                   v-model="ciudadGimnasio"
                   type="text"
-                  placeholder="Ingresa la ciudad"
+                  placeholder="Ingresa el grupo muscular"
                   required
                 ></b-form-input>
 

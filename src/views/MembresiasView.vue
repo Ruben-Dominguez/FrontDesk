@@ -1,5 +1,6 @@
 <template>
   <div class="gym-body">
+    
     <div class="gym-container container">
       <b-row>
         <b-col class="gym-col padding-0">
@@ -9,9 +10,29 @@
               <b-button class="new-gym" variant="light" @click="show">Nueva membresía</b-button>
             </div>
           </div>
-          <div id="gimnasios">
+
+          <div class="cajahijo2">
+            <div class="cajahijo3">
+              <div class="cajahijo4">
+              <b-card-text class="text-center">
+                    <b-row>
+                      <b-col>
+                        <h6>Membresía mensual</h6>
+                      </b-col>
+                      <b-col>
+                        <p>Tipo de usuario:socio</p>
+                      </b-col>
+                      <b-col>
+                        <p>Fecha de corte</p>
+                      </b-col>
+                    </b-row>
+                  </b-card-text>
+              </div>
+            </div>
             
           </div>
+
+          
         </b-col>
       </b-row>
     </div>
@@ -31,7 +52,7 @@
                 <label >Nombre</label>
                 <b-form-input
                   id="input-3"
-                  v-model="nombreGimnasio"
+                  v-model="nombreMembresia"
                   type="text"
                   placeholder="Ingresa el nombre"
                   required
@@ -40,18 +61,18 @@
                 <label >Porcentaje de descuento</label>
                 <b-form-input
                   id="input-3"
-                  v-model="direccionGimnasio"
+                  v-model="PorcentajeMembresia"
                   type="text"
-                  placeholder="Ingresa la dirección"
+                  placeholder="Ingresa el porcentaje de descuento"
                   required
                 ></b-form-input>
 
                 <label >Periodicidad</label>
                 <b-form-input
                   id="input-3"
-                  v-model="coloniaGimnasio"
+                  v-model="PeriodicidadMembresia"
                   type="text"
-                  placeholder="Ingresa la colonia"
+                  placeholder="Ingresa la periodicidad"
                   required
                 ></b-form-input>
 
@@ -151,10 +172,12 @@
     text-align: left;
     font-size: 2rem;
     font-weight: 600;
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
   }
 
   .new-gym {
-    width: 20%;
+    width: 30%;
     float: right;
     background-color: white;
     border-color: lightgrey;
@@ -166,6 +189,10 @@
     border-color: lightgrey;
     color: blueviolet;
   } 
+
+  #new-gym-button{
+    padding: 1rem 1rem 0 1rem;
+  }
 
   label {
     text-align: left !important;
@@ -212,7 +239,7 @@
 
   .modal-content {
     display: flex;
-    background-color: #fefefe;
+    background-color: #ffffff;
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -256,7 +283,40 @@
   }
 
   #gimnasios{
-
+    width: 80%;
+    background-color: #fefefe;
+    padding: .5rem .5rem .5rem .5rem;
   }
+
+  .cajahijo1 {
+  display: flex;
+  padding: 3rem;
+  justify-content: space-around;
+}
+
+.cajahijo2 {
+  background-color: #D2A3DA;
+  border-radius: 30px;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2rem;
+}
+
+.cajahijo3 {
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 3rem;
+}
+
+.cajahijo4 {
+  display: flex;
+  flex-direction: column;
+  padding:1rem;
+}
 
 </style>
