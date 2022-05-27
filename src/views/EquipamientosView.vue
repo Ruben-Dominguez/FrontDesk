@@ -4,144 +4,122 @@
       <b-row>
         <b-col class="gym-col padding-0">
           <div class="btn-group btn-group-justified">
-            <h1>Selecciona la sede del gimnasio</h1>
+            <h1>Equipamientos</h1>
             <div class="form-container" id="new-gym-button">
-              <b-button class="new-gym" variant="light" @click="show">Nuevo gimnasio</b-button>
+              <b-button class="new-gym" variant="light" @click="show">Nuevo equipo</b-button>
             </div>
           </div>
           <div id="gimnasios">
             <b-row>
-              <!--<job-card id="1"></job-card>
-              <job-card id="2"></job-card>
-              <job-card id="3"></job-card>-->
+              
               <b-col md="3">
                 <b-card
-                title="Gimnasio 1"
+                title="Equipo 1"
                 tag="article"
                 style="max-width:20rem"
                 class="mb-2"
                 >
                   <div >
-                    <img alt="gym-info"  class="img-gym" src="../assets/images/gimnasio1.jpg" top>
-                  </div>
-
-                  <b-card-text class="text-left">
-                    <h6>Teléfono</h6>
-                    <p>  Teléfono</p>
-
-                    <h6>Dirección postal</h6>
-                    <p>  Nombre de calle</p>
-                    <p>  #número</p>
-                    <p>  Colonia, código postal</p>
-                    <p>  Estado, Ciudad</p>
-
-                    <h6>Mensualidad</h6>
-                    <p>  Mensualidad</p>
-
-                    <h6>Aforo</h6>
-                    <p>  Aforo</p>
-
-                    <h6>Aforo permitido</h6>
-                    <p>  Aforo permitido</p>
-                  </b-card-text>
-                </b-card>
-              </b-col>
-              
-              <b-col md="3">
-                <b-card
-                title="Gimnasio 1"
-                tag="article"
-                style="max-width:auto"
-                class="mb-2"
-                >
-                  <div>
-                    <img alt="gym-info" class="img-gym" src="../assets/images/gimnasio1.jpg" top>
+                    <img alt="gym-info"  class="img-gym" src="../assets/images/equipo1.jpg" top>
                   </div>
                   
                   <b-card-text class="text-left">
-                    <h6>Teléfono</h6>
-                    <p>  Teléfono</p>
+                    <h6>Tipo de equipo</h6>
+                    <p>  Tipo de equipo</p>
 
-                    <h6>Dirección postal</h6>
-                    <p>  Nombre de calle</p>
-                    <p>  #número</p>
-                    <p>  Colonia, código postal</p>
-                    <p>  Estado, Ciudad</p>
+                    <h6>Músculo que se trabaja</h6>
+                    <p>  Músculo que se trabaja</p>
 
-                    <h6>Mensualidad</h6>
-                    <p>  Mensualidad</p>
+                    <h6>Grupo muscular</h6>
+                    <p>  Grupo muscular</p>
 
-                    <h6>Aforo</h6>
-                    <p>  Aforo</p>
+                    <h6>Fecha de revisión</h6>
+                    <p>  dd/mm/aa</p>
 
-                    <h6>Aforo permitido</h6>
-                    <p>  Aforo permitido</p>
                   </b-card-text>
                 </b-card>
               </b-col>
 
               <b-col md="3">
                 <b-card
-                title="Gimnasio 1"
+                title="Equipo 2"
                 tag="article"
-                style="max-width:auto"
+                style="max-width:20rem"
                 class="mb-2"
                 >
-                  <div>
-                    <img alt="gym-info" class="img-gym" src="../assets/images/gimnasio1.jpg" top>
+                  <div >
+                    <img alt="gym-info"  class="img-gym" src="../assets/images/equipo1.jpg" top>
                   </div>
                   
                   <b-card-text class="text-left">
-                    <h6>Teléfono</h6>
-                    <p>  Teléfono</p>
+                    <h6>Tipo de equipo</h6>
+                    <p>  Tipo de equipo</p>
 
-                    <h6>Dirección postal</h6>
-                    <p>  Nombre de calle</p>
-                    <p>  #número</p>
-                    <p>  Colonia, código postal</p>
-                    <p>  Estado, Ciudad</p>
+                    <h6>Músculo que se trabaja</h6>
+                    <p>  Músculo que se trabaja</p>
 
-                    <h6>Mensualidad</h6>
-                    <p>  Mensualidad</p>
+                    <h6>Grupo muscular</h6>
+                    <p>  Grupo muscular</p>
 
-                    <h6>Aforo</h6>
-                    <p>  Aforo</p>
+                    <h6>Fecha de revisión</h6>
+                    <p>  dd/mm/aa</p>
 
-                    <h6>Aforo permitido</h6>
-                    <p>  Aforo permitido</p>
                   </b-card-text>
                 </b-card>
               </b-col>
 
               <b-col md="3">
                 <b-card
-                title="Gimnasio 1"
+                title="Equipo 3"
                 tag="article"
-                style="max-width:auto"
+                style="max-width:20rem"
                 class="mb-2"
                 >
-                  <div>
-                    <img alt="gym-info" class="img-gym" src="../assets/images/gimnasio1.jpg" top>
+                  <div >
+                    <img alt="gym-info"  class="img-gym" src="../assets/images/equipo1.jpg" top>
                   </div>
                   
                   <b-card-text class="text-left">
-                    <h6>Teléfono</h6>
-                    <p>  Teléfono</p>
+                    <h6>Tipo de equipo</h6>
+                    <p>  Tipo de equipo</p>
 
-                    <h6>Dirección postal</h6>
-                    <p>  Nombre de calle</p>
-                    <p>  #número</p>
-                    <p>  Colonia, código postal</p>
-                    <p>  Estado, Ciudad</p>
+                    <h6>Músculo que se trabaja</h6>
+                    <p>  Músculo que se trabaja</p>
 
-                    <h6>Mensualidad</h6>
-                    <p>  Mensualidad</p>
+                    <h6>Grupo muscular</h6>
+                    <p>  Grupo muscular</p>
 
-                    <h6>Aforo</h6>
-                    <p>  Aforo</p>
+                    <h6>Fecha de revisión</h6>
+                    <p>  dd/mm/aa</p>
 
-                    <h6>Aforo permitido</h6>
-                    <p>  Aforo permitido</p>
+                  </b-card-text>
+                </b-card>
+              </b-col>
+
+              <b-col md="3">
+                <b-card
+                title="Equipo 4"
+                tag="article"
+                style="max-width:20rem"
+                class="mb-2"
+                >
+                  <div >
+                    <img alt="gym-info"  class="img-gym" src="../assets/images/equipo1.jpg" top>
+                  </div>
+                  
+                  <b-card-text class="text-left">
+                    <h6>Tipo de equipo</h6>
+                    <p>  Tipo de equipo</p>
+
+                    <h6>Músculo que se trabaja</h6>
+                    <p>  Músculo que se trabaja</p>
+
+                    <h6>Grupo muscular</h6>
+                    <p>  Grupo muscular</p>
+
+                    <h6>Fecha de revisión</h6>
+                    <p>  dd/mm/aa</p>
+
                   </b-card-text>
                 </b-card>
               </b-col>
@@ -157,13 +135,13 @@
       <div class="close-div">
         <div class="close">&times;</div>
       </div>
-      <h3 class="agregar-titulo">Agregar gimnasio</h3>
+      <h3 class="agregar-titulo">Nuevo equipo</h3>
       <b-form class="agregar-form" @submit="onSubmitAgregar">
         <b-form-group id="input-group-agregar">
           <b-container class="bv-example-row">
             <b-row>
               <b-col>
-                <label >Nombre</label>
+                <label >Fotografía</label>
                 <b-form-input
                   id="input-3"
                   v-model="nombreGimnasio"
@@ -172,7 +150,7 @@
                   required
                 ></b-form-input>
 
-                <label >Dirección #Casa</label>
+                <label >Nombre de la máquina</label>
                 <b-form-input
                   id="input-3"
                   v-model="direccionGimnasio"
@@ -181,7 +159,7 @@
                   required
                 ></b-form-input>
 
-                <label >Colonia</label>
+                <label > Periodo de mentenimiento</label>
                 <b-form-input
                   id="input-3"
                   v-model="coloniaGimnasio"
@@ -190,26 +168,9 @@
                   required
                 ></b-form-input>
 
-                <label >Estado</label>
-                <b-form-input
-                  id="input-3"
-                  v-model="estadoGimnasio"
-                  type="text"
-                  placeholder="Ingresa el estado"
-                  required
-                ></b-form-input>
-
-                <label >Aforo total</label>
-                <b-form-input
-                  id="input-3"
-                  v-model="aforoGimnasio"
-                  type="number"
-                  placeholder="Ingresa el aforo total"
-                  required
-                ></b-form-input>
               </b-col>
               <b-col>
-                <label>Número de télefono</label>
+                <label>Tipo de equipo</label>
                 <b-form-input
                   id="input-3"
                   v-model="telefonoGimnasio"
@@ -218,7 +179,7 @@
                   required
                 ></b-form-input>
 
-                <label>País</label>
+                <label>Frecuencia de mantenimiento</label>
                 <b-form-input
                   id="input-3"
                   v-model="paisGimnasio"
@@ -227,7 +188,7 @@
                   required
                 ></b-form-input>
 
-                <label>Código postal</label>
+                <label>Múculo que se trabaja</label>
                 <b-form-input
                   id="input-3"
                   v-model="cpGimnasio"
@@ -236,7 +197,7 @@
                   required
                 ></b-form-input>
 
-                <label>Ciudad</label>
+                <label>Grupo mucular</label>
                 <b-form-input
                   id="input-3"
                   v-model="ciudadGimnasio"
@@ -245,34 +206,8 @@
                   required
                 ></b-form-input>
 
-                <label>Aforo permitido</label>
-                <b-form-input
-                  id="input-3"
-                  v-model="aforoGimnasio"
-                  type="number"
-                  placeholder="Ingresa el aforo permitido"
-                  required
-                ></b-form-input>
               </b-col>
-              <b-col>
-                <label>Mensualidad</label>
-                <b-form-input
-                  id="input-3"
-                  v-model="mensualidadGimnasio"
-                  type="text"
-                  placeholder="Ingresa la mensualidad"
-                  required
-                ></b-form-input>
-
-                <label>Fotografia</label>
-                <b-form-input
-                  id="input-3"
-                  v-model="fotografiaGimnasio"
-                  type="image"
-                  placeholder=""
-                  required
-                ></b-form-input>
-              </b-col>
+              
             </b-row>
           </b-container>
         </b-form-group>
@@ -283,11 +218,8 @@
 </template>
 
 <script>
-//import jobCard from '@/components/JobCard.vue'
 
   export default {
-    //name: "GimnasiosView",
-    //components: {"job-card":jobCard},
     data() {
       return {
         form: {
@@ -328,7 +260,6 @@
     }
   }
 
-
 </script>
 
 
@@ -339,7 +270,6 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: black;
-    
   }
 
   .padding-0{
@@ -349,7 +279,7 @@
 
   .gym-body {
     background-color: #ECDFF4;
-    height: 100vmin;
+    height: 100vh;
   }
 
   .gym-container {
@@ -359,7 +289,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 10%;
+    padding-top: 5%;
   }
 
   .gym-col {
@@ -452,7 +382,7 @@
     padding: 20px;
     border: 1px solid #888;
     border-radius: 16px;
-    width: 85%;
+    width: 80%;
     
   }
 
