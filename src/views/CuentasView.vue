@@ -7,18 +7,25 @@
     </div>
 
     <div class="cajahijo2">
-      <div class="cajahijo3">
+      <div class="cajahijo3" onclick='window.location.href="/socio"'>
         <img class="info-img round" src="../assets/images/persona.png">
         <div class="cajahijo4">
-          <b-nav-text>{{this.$store.state.users[this.$store.state.numUsers-1].username}}</b-nav-text>
-          <p>Socio</p>
+          <h2>{{this.$store.state.users[0].username}}</h2>
+          <p>{{this.$store.state.users[0].tipo.charAt(0).toUpperCase() + this.$store.state.users[0].tipo.slice(1)}}</p>
         </div>
       </div>
       <div class="cajahijo3">
         <img class="info-img round" src="../assets/images/persona.png">
         <div class="cajahijo4">
-          <b-nav-text>{{this.$store.state.users[this.$store.state.numUsers-1].username}}</b-nav-text>
-          <p>Socio</p>
+          <h2>{{this.$store.state.users[1].username}}</h2>
+          <p>{{this.$store.state.users[1].tipo.charAt(0).toUpperCase() + this.$store.state.users[1].tipo.slice(1)}}</p>
+        </div>
+      </div>
+      <div class="cajahijo3" onclick='window.location.href="/frontdesk"'>
+        <img class="info-img round" src="../assets/images/persona.png">
+        <div class="cajahijo4">
+          <h2>{{this.$store.state.users[2].username}}</h2>
+          <p>{{this.$store.state.users[2].tipo.charAt(0).toUpperCase() + this.$store.state.users[2].tipo.slice(1)}}</p>
         </div>
       </div>
     </div>
@@ -34,18 +41,6 @@ export default {
     }
   },
   mounted() {
-    var modal = document.getElementById("myModal");
-    var span = document.getElementsByClassName("close")[0];
-
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
   },
   methods: {
     show(event) {
@@ -166,6 +161,9 @@ input {
 .cajahijo4 {
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  align-content: left;
+  align-items: left;
 }
 
 .info-img {
@@ -182,5 +180,9 @@ b-nav-text {
   font-size: 1.5rem;
 }
 
+p {
+  text-align: left;
+  padding: 0 1rem 0.5rem 4.5rem;
+}
 
 </style>

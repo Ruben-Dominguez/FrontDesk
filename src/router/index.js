@@ -29,7 +29,7 @@ const routes = [
   {path: '/socio', name: 'Socio',component: SociosView},
   {path: '/campaign', name: 'PromotionalCampaign',component: PromotionalCampaignView},
   {path: '/campaign-add', name: 'AddCampaign',component: AddCampaignView},
-    {path: '/campaign-edit', name: 'EditCampaign',component: EditCampaignView},
+  {path: '/campaign-edit', name: 'EditCampaign',component: EditCampaignView},
   {path: '/gimnasios', name: 'Gimnasios',component: GimnasiosView},
   {path: '/frontdesk', name: 'FrontDeskInfo',component: FrontDeskView},
   {path: '/membresias', name: 'Membresias',component: MembresiasView},

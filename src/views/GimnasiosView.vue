@@ -14,7 +14,7 @@
               <!--<job-card id="1"></job-card>
               <job-card id="2"></job-card>
               <job-card id="3"></job-card>-->
-              <b-col md="3">
+              <b-col md="3" onclick='window.location.href="/campaign"'>
                 <b-card
                 title="Gimnasio 1"
                 tag="article"
@@ -47,7 +47,7 @@
                 </b-card>
               </b-col>
               
-              <b-col md="3">
+              <b-col md="3" onclick='window.location.href="/campaign"'>
                 <b-card
                 title="Gimnasio 1"
                 tag="article"
@@ -80,7 +80,7 @@
                 </b-card>
               </b-col>
 
-              <b-col md="3">
+              <b-col md="3" onclick='window.location.href="/campaign"'>
                 <b-card
                 title="Gimnasio 1"
                 tag="article"
@@ -113,7 +113,7 @@
                 </b-card>
               </b-col>
 
-              <b-col md="3">
+              <b-col md="3" onclick='window.location.href="/campaign"'>
                 <b-card
                 title="Gimnasio 1"
                 tag="article"

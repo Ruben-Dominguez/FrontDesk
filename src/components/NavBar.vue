@@ -3,7 +3,7 @@
     <b-nav-item onclick='window.location.href="/gimnasios"'>Gimnasios</b-nav-item>
     <b-nav-item onclick='window.location.href="/kpis"'>Dashboard</b-nav-item>
     <b-nav-item onclick='window.location.href="/membresias"'>Membresias</b-nav-item>
-    <b-nav-item>Cuentas</b-nav-item>
+    <b-nav-item onclick='window.location.href="/cuentas"'>Cuentas</b-nav-item>
     <b-nav-item onclick='window.location.href="/equipamientos"'>Equipamientos</b-nav-item>
     <div class="info">
       <img class="info-img" src="../assets/images/bell.png">

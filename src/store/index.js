@@ -5,7 +5,16 @@ export default createStore({
     numUsers: 1,
     users: [
       {
-        username: 'Rene R.'
+        username: 'Raul Jimenez',
+        tipo: 'socio'
+      },
+      {
+        username: 'Juan Perez',
+        tipo: 'instructor'
+      },
+      {
+        username: 'Daniela Gomez',
+        tipo: 'recepcion'
       }
     ],
     passed: {
