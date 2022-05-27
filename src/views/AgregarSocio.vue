@@ -15,6 +15,7 @@
         <input placeholder="Dirección" type="text" class="campo" required>
         <input placeholder="Número de Celular" type="tel" class="campo" required>
         <input placeholder="Membresía" type="text" class="campo" required>
+        <textarea id="objetivos" placeholder="Lista de Objetivos de Entrenamiento" type="text" style="resize:none" class="campo description"></textarea>
       </div>
       <b-form class="separador" @submit="onSubmit">
         <input placeholder="Nombre" type="text" class="campo" required>
@@ -228,6 +229,10 @@ input {
 
 .btn{
   margin: 2rem;
+}
+
+#objetivos {
+  height: 10rem;
 }
 
 

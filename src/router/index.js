@@ -8,6 +8,7 @@ import GimnasiosView from '../views/GimnasiosView.vue'
 import CuentasView from '../views/CuentasView.vue'
 import AgregarCuenta from '../views/AgregarCuenta.vue'
 import AgregarSocio from '../views/AgregarSocio.vue'
+import AgregarInstructor from '../views/AgregarInstructor.vue'
 //import MembresiasView from '../views/MembresiasView.vue'
 //import EquipamientosView from '../views/EquipamientosView.vue'
 
@@ -17,6 +18,7 @@ const routes = [
   {path: '/cuentas', name: 'Cuentas',component: CuentasView},
   {path: '/cuentas-add', name: 'AgregarCuenta',component: AgregarCuenta},
   {path: '/cuentas-add-socio', name: 'AgregarSocio',component: AgregarSocio},
+  {path: '/cuentas-add-instructor', name: 'AgregarInstructor',component: AgregarInstructor},
   {path: '/socio', name: 'Socio',component: SociosView},
   {path: '/campaign', name: 'PromotionalCampaign',component: PromotionalCampaignView},
   {path: '/campaign-add', name: 'AddCampaign',component: AddCampaignView},
