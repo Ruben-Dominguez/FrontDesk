@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import RegistrarUsuario from '../components/RegistrarUsuario.vue'
 import LoginView from '../views/LoginView.vue'
+import KpiView from '../views/KpiView.vue'
 import SociosView from '../views/SociosView.vue'
 import PromotionalCampaignView from '../views/PromotionalCampaignView.vue'
 import AddCampaignView from '../views/AddCampaignView.vue'
@@ -19,6 +20,7 @@ import FrontDeskView from '../views/FrontDeskView.vue'
 const routes = [
   {path: '/registrar', name: 'RegistrarUsuario',component: RegistrarUsuario},
   {path: '/', name: 'Login',component: LoginView},
+  {path: '/kpis', name: 'KpiView',component: KpiView},
   {path: '/cuentas', name: 'Cuentas',component: CuentasView},
   {path: '/cuentas-add', name: 'AgregarCuenta',component: AgregarCuenta},
   {path: '/cuentas-add-socio', name: 'AgregarSocio',component: AgregarSocio},

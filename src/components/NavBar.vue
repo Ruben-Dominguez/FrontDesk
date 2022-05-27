@@ -1,7 +1,7 @@
 <template>
   <b-nav class="navigator">
-    <b-nav-item>Gimnasios</b-nav-item>
-    <b-nav-item>Dashboard</b-nav-item>
+    <b-nav-item onclick='window.location.href="/gimnasios"'>Gimnasios</b-nav-item>
+    <b-nav-item onclick='window.location.href="/kpis"'>Dashboard</b-nav-item>
     <b-nav-item>Membresias</b-nav-item>
     <b-nav-item onclick='window.location.href="/cuentas"'>Cuentas</b-nav-item>
     <b-nav-item>Equipamientos</b-nav-item>
