@@ -77,7 +77,7 @@
         <br>
       </b-form>
     </div>
-    <img src="../assets/images/persona.png">
+    <img class="fotooo" src="../assets/images/persona.png">
     <div class="clearfix"></div>
 
   </div>
@@ -171,6 +171,10 @@ export default {
   z-index: 9;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, .70);
   height: 120px;
+}
+
+.fotooo {
+  border-radius: 50%;
 }
 
 .submenu1 {

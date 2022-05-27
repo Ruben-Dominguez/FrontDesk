@@ -79,7 +79,7 @@
         <br>
       </b-form>
     </div>
-    <img src="../assets/images/persona.png">
+    <img class="fotooo" src="../assets/images/persona.png">
     <div class="clearfix"></div>
 
   </div>
@@ -404,7 +404,9 @@ input {
   width: 46%
 }
 
-
+.fotooo {
+  border-radius: 50%;
+}
 
 
 th,

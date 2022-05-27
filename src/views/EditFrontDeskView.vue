@@ -78,7 +78,7 @@
           <br>
         </b-form>
       </div>
-      <img src="../assets/images/persona.png">
+      <img class="fotooo" src="../assets/images/persona.png">
 
     </div>
     <div class="clearfix"></div>
@@ -177,6 +177,10 @@ export default {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
   color: black;
+}
+
+.fotooo {
+  border-radius: 50%;
 }
 
 .menu {
