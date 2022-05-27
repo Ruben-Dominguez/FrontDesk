@@ -3,12 +3,8 @@
     <div class="gym-container container">
       <b-row>
         <b-col class="gym-col padding-0">
-          <h1>Selecciona la sede del gimnasio</h1>
-          <b-button class="new-gym" variant="light" @click="show">Nuevo gimnasio</b-button>
-          <div class="form-container">
-            <b-button class="new-gym" variant="light" @click="show">Nuevo gimnasio</b-button>
-            <div></div>
-          </div>
+          <h1>Membresias</h1>
+          
         </b-col>
       </b-row>
     </div>
