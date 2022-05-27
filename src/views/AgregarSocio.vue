@@ -10,21 +10,35 @@
     <div class="columnas">
       <div class="separador-foto">
         <img id="fotito" src="../assets/images/no-img.png">
+        <label>Fecha de Nacimiento</label>
         <input placeholder="Fecha de Nacimiento" type="date" class="campo" required>
+        <label>Género</label>
         <b-form-select v-model="selectedGender" :options="optionsGender" class="campo" required></b-form-select>
+        <label>Dirección</label>
         <input placeholder="Dirección" type="text" class="campo" required>
+        <label>Número de Celular</label>
         <input placeholder="Número de Celular" type="tel" class="campo" required>
+        <label>Membresía</label>
         <input placeholder="Membresía" type="text" class="campo" required>
+        <label>Lista de Objetivos de Entrenamiento</label>
         <textarea id="objetivos" placeholder="Lista de Objetivos de Entrenamiento" type="text" style="resize:none" class="campo description"></textarea>
       </div>
       <b-form class="separador" @submit="onSubmit">
+        <label>Nombre</label>
         <input placeholder="Nombre" type="text" class="campo" required>
+        <label>Tipo de Usuario</label>
         <b-form-select v-model="selected" :options="options" class="campo" disabled></b-form-select>
+        <label>Correo Electrónico</label>
         <input placeholder="Correo Electrónico" type="email" class="campo" required>
+        <label>Minutos de Antelación</label>
         <input placeholder="Minutos de Antelación" type="number" class="campo" required>
+        <label>Fecha de Ingreso</label>
         <input placeholder="Fecha de Ingreso" type="date" class="campo" required>
+        <label>Fecha de Corte</label>
         <input placeholder="Fecha de Corte" type="date" class="campo" required>
+        <label>Referenciado por</label>
         <input placeholder="Referenciado por" type="text" class="campo" required>
+        <label>Estatus</label>
         <b-form-select v-model="selectedStatus" :options="optionsStatus" class="campo" required></b-form-select>
         <div class="but-cont">
           <b-button class="cancel-button btn" variant="primary" onclick='window.location.href="/cuentas"'>Cancelar</b-button>
@@ -105,6 +119,7 @@ export default {
   height: auto;
   position: relative;
   padding-top: 8rem;
+  padding-bottom: 5%;
 }
 
 .title {
@@ -190,7 +205,7 @@ input {
   width: 80%;
   height: 65px;
   padding: 3px 8px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .close {
@@ -220,11 +235,17 @@ input {
   align-items: center;
 }
 
+.separador {
+  margin-top: .5rem;
+}
+
 .but-cont {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 .btn{
@@ -232,7 +253,16 @@ input {
 }
 
 #objetivos {
-  height: 10rem;
+  height: 12rem;
+}
+
+label {
+  color: #8D2BC0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 20%;
 }
 
 

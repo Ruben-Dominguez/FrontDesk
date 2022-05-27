@@ -12,8 +12,11 @@
         <img id="fotito" src="../assets/images/no-img.png">
       </div>
       <b-form class="separador" @submit="onSubmit">
+        <label>Nombre</label>
         <input placeholder="Nombre" type="text" class="campo" required>
+        <label>Tipo de Usuario</label>
         <b-form-select v-model="selected" :options="options" class="campo" required></b-form-select>
+        <label>Correo Electrónico</label>
         <input placeholder="Correo Electrónico" type="email" class="campo" required>
         <div class="but-cont">
           <b-button class="cancel-button btn" variant="primary" onclick='window.location.href="/cuentas"'>Cancelar</b-button>
@@ -168,7 +171,7 @@ input {
   width: 80%;
   height: 65px;
   padding: 3px 8px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .close {
@@ -198,6 +201,10 @@ input {
   align-items: center;
 }
 
+.separador {
+  margin-top: .5rem;
+}
+
 .but-cont {
   width: 100%;
   display: flex;
@@ -209,5 +216,13 @@ input {
   margin: 2rem;
 }
 
+label {
+  color: #8D2BC0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 20%;
+}
 
 </style>
