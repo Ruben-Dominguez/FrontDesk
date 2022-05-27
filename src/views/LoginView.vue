@@ -97,14 +97,13 @@
     methods: {
       onSubmit(event) {
         event.preventDefault()
-        alert(JSON.stringify(this.form))
         var control = document.getElementsByClassName("navigation-cont")[0];
         var navbar = document.getElementsByClassName("NavBar")[0];
         control.style.justifyContent = "space-between";
         navbar.style.display = 'flex';
         this.$store.state.users.push({"username": this.$data.form.email});
         this.$store.state.numUsers = this.$store.state.numUsers + 1;
-        this.$router.push('/socio/')
+        this.$router.push('/gimnasios/')
       },
       onSubmitRestablecer(event) {
         event.preventDefault()
@@ -215,18 +214,18 @@
   .password-forget-button:hover {
     background-color: lightgrey;
     border-color: lightgrey;
-  } 
+  }
 
   .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgb(0,0,0); 
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
   }
 
@@ -234,10 +233,10 @@
     display: flex;
     align-items: center;
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 35%; 
+    width: 35%;
     border-radius: 16px;
   }
 

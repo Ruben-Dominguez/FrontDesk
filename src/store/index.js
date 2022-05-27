@@ -7,7 +7,11 @@ export default createStore({
       {
         username: 'Rene R.'
       }
-    ]
+    ],
+    passed: {
+      name: '',
+      email: ''
+    }
   },
   getters: {
   },

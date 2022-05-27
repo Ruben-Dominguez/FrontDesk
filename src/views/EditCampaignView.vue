@@ -2,14 +2,15 @@
 <div class="body-color">
   <div class="caja">
 
-    <h1 class="title">Agregar Nueva Campaña Promocional</h1><br><br>
+    <h1 class="title">Editar Campaña Promocional</h1><br><br>
     <svg onclick="window.location.href='/campaign'" class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path onclick="window.location.href='/campaign'" d="M22 2L2 22M22 22L2 2L22 22Z" stroke="black" stroke-width="2.5" stroke-linecap="round" />
     </svg>
     <br><br><br>
     <div class="form-container">
-      <b-form class="login-form">
+      <b-form class="login-form" @submit="onSubmit">
         <input placeholder="Titulo de la promoción" v-model="form.titulo" type="text" class="campo left">
+
         <input placeholder="Feca de Inicio" v-model="form.fInicio" class="campo right" type="text" onfocus="(this.type = 'date')" id="date">
         <div class="clearfix"></div>
         <input placeholder="Tipo de Usuario" v-model="form.tipoUsuario" type="text" class="campo left">
@@ -25,7 +26,7 @@
         <textarea placeholder="Descripción de la campaña" v-model="form.descripcion" type="text" style="resize:none" class="campo left description"></textarea>
         <div class="clearfix"></div>
         <br>
-        <b-button class="subbmit-button" type="submit" variant="primary" @click="onSubmit">Agregar</b-button>
+        <b-button class="subbmit-button" type="submit" variant="primary">Editar</b-button>
         <b-button class="cancel-button" type="submit" variant="primary" @click="cancelar">Cancelar</b-button>
       </b-form>
     </div>

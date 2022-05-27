@@ -1,9 +1,9 @@
 <template>
-  <b-navbar class="navigator">
-    <b-nav-item>Gimnasios</b-nav-item>
-    <b-nav-item>Dashboard</b-nav-item>
+  <b-nav class="navigator">
+    <b-nav-item onclick='window.location.href="/gimnasios"'>Gimnasios</b-nav-item>
+    <b-nav-item onclick='window.location.href="/kpis"'>Dashboard</b-nav-item>
     <b-nav-item>Membresias</b-nav-item>
-    <b-nav-item>Cuentas</b-nav-item>
+    <b-nav-item onclick='window.location.href="/cuentas"'>Cuentas</b-nav-item>
     <b-nav-item>Equipamientos</b-nav-item>
     <div class="info">
       <img class="info-img" src="../assets/images/bell.png">
@@ -11,14 +11,14 @@
       <b-nav-text>{{this.$store.state.users[this.$store.state.numUsers-1].username}}</b-nav-text>
       <img class="info-img chico" src="../assets/images/drop-triangle.png">
     </div>
-  </b-navbar>
+  </b-nav>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      
+
     }
   },
   mounted() {
@@ -39,6 +39,7 @@ export default {
 
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 .info-img {
