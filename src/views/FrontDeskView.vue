@@ -21,7 +21,7 @@
     </svg>
 
   </div>
-  <div class="submenu3" onclick='window.location.href="/frontdesk-add"'>
+  <div class="submenu3" onclick='window.location.href="/cuentas-add"'>
     <h4 class="fix-submenu">Nueva Cuenta</h4>
     <svg class="vector_add" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12.6702 0.99994V24.3404" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -148,6 +148,7 @@ export default {
       event.preventDefault()
       var modal = document.getElementById("myModal");
       alert("Cuenta Eliminada Correctamente!");
+      location.href="/cuentas";
       modal.style.display = "none";
     }
   }
