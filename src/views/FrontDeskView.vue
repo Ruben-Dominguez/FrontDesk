@@ -1,9 +1,39 @@
 <template>
+<div class="clearfix"></div>
+<div class="menu">
+  <div class="submenu1" @click="show">
+    <h4 class="fix-submenu">Eliminar Cuenta</h4>
+    <svg class="fix-submenu vector_trash" width="32" height="33" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4.875 9.87463H8.125H34.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M13 9.8746V6.58305C13 5.71008 13.3424 4.87286 13.9519 4.25558C14.5614 3.63829 15.388 3.2915 16.25 3.2915H22.75C23.612 3.2915 24.4386 3.63829 25.0481 4.25558C25.6576 4.87286 26 5.71008 26 6.58305V9.8746M30.875 9.8746V32.9154C30.875 33.7884 30.5326 34.6256 29.9231 35.2429C29.3136 35.8602 28.487 36.207 27.625 36.207H11.375C10.513 36.207 9.6864 35.8602 9.0769 35.2429C8.46741 34.6256 8.125 33.7884 8.125 32.9154V9.8746H30.875Z"
+        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16.25 18.1035V27.9782" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M22.75 18.1035V27.9782" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <div class="submenu2" onclick='window.location.href="/frontdesk-edit"'>
+    <h4 class="fix-submenu">Editar Cuenta</h4>
+    <svg class="vector_edit" width="25" height="25" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.9176 1.2153C16.5744 1.35744 16.2626 1.56578 16 1.82843L2.5 15.3284L1 20.8284L6.5 19.3284L20 5.82843C20.2626 5.56578 20.471 5.25398 20.6131 4.91082C20.7553 4.56766 20.8284 4.19986 20.8284 3.82843C20.8284 3.45699 20.7553 3.0892 20.6131 2.74603C20.471 2.40287 20.2626 2.09107 20 1.82843C19.7374 1.56578 19.4256 1.35744 19.0824 1.2153C18.7392 1.07316 18.3714 1 18 1C17.6286 1 17.2608 1.07316 16.9176 1.2153Z"
+        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </div>
+  <div class="submenu3" onclick='window.location.href="/frontdesk-add"'>
+    <h4 class="fix-submenu">Nueva Cuenta</h4>
+    <svg class="vector_add" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.6702 0.99994V24.3404" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M1 12.6702H24.3405" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+  </div>
+</div>
 <div class="body-color">
+
   <div class="caja">
     <h1>Información De La Cuenta Recepción</h1>
-
-
     <div class="form-container">
       <b-form class="form-campos" @submit="onSubmit">
         <div class="box_left">
@@ -51,6 +81,21 @@
     <div class="clearfix"></div>
 
   </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="close-div">
+        <div class="close" @click="close">&times;</div>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="restablecer-titulo">¿Estás seguro de eliminar la cuenta?</h3>
+      <div class="clearfix"></div>
+      <br>
+      <b-button class="cancel-button" type="submit" variant="primary" @click="close">Cancelar</b-button>
+      <b-button class="subbmit-button" type="submit" variant="primary" @click="eliminar">Eliminar</b-button>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
 
 </div>
 </template>
@@ -102,7 +147,7 @@ export default {
     eliminar(event) {
       event.preventDefault()
       var modal = document.getElementById("myModal");
-      alert("Campaña Eliminada Correctamente!");
+      alert("Cuenta Eliminada Correctamente!");
       modal.style.display = "none";
     }
   }
@@ -117,18 +162,115 @@ export default {
   color: black;
 }
 
+.menu {
+  position: fixed;
+  float: center;
+  background: white;
+  width: 100%;
+  z-index: 9;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .70);
+  height: 120px;
+}
+
+.submenu1 {
+  position: relative;
+  bottom: -56%;
+  float: right;
+  padding-top: 12px;
+  padding-right: 3.5px;
+  padding-bottom: 7px;
+  margin-right: 10px;
+}
+
+.submenu1:hover {
+  cursor: pointer;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background-color: #ecd0fb;
+
+}
+
+.submenu2 {
+  position: relative;
+  bottom: -56%;
+  float: right;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 3.5px;
+  margin-right: 30px;
+}
+
+.submenu2:hover {
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  background-color: #ecd0fb;
+}
+
+.submenu3 {
+  position: relative;
+  bottom: -56%;
+  float: right;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 3.5px;
+  margin-right: 30px;
+}
+
+.submenu3:hover {
+  cursor: pointer;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  background-color: #ecd0fb;
+}
+
+.fix-submenu {
+  display: block;
+  float: right;
+}
+
+.vector_trash {
+  position: relative;
+  top: -3px;
+  margin-right: 2px;
+}
+
+.vector_edit {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+}
+
+.vector_add {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+}
+
+.restablecer-titulo {
+  display: inline;
+  float: center;
+  padding: 1.5rem 0rem 10rem 0;
+  font-size: 2em;
+  font-weight: 700;
+
+}
+
 .body-color {
+  top: 100px;
   background-color: #ECDFF4;
   height: 100vh;
   position: relative;
   padding-top: 4rem;
+
 }
 
-img{
+img {
   display: inline-block;
-  margin-top:5%;
+  margin-top: 5%;
 
 }
+
 h2 {
   text-align: left;
   font-size: 1.5rem;
@@ -215,12 +357,13 @@ input {
   clear: both;
 }
 
-.form-campos{
+.form-campos {
   display: inline-block;
   float: left;
   width: 70%;
-  margin-top:2.7%;
+  margin-top: 2.7%;
 }
+
 .right {
   display: block;
   float: right;

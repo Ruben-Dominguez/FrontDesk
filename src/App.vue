@@ -14,7 +14,7 @@
     <router-link to="/registrar">Registrar Usuario</router-link> |
     <router-link to="/login">Ingresar</router-link>
   </nav> -->
-  
+
   <router-view/>
 </template>
 
@@ -82,6 +82,6 @@ img {
   color: black !important;
   font-weight: 600;
   font-size: 1.2rem;
-  
+
 }
 </style>
