@@ -88,7 +88,7 @@ export default {
   background-color: #ECDFF4;
   height: 100vh;
   position: relative;
-
+  padding-top: 8rem;
 }
 
 .title {
@@ -100,8 +100,6 @@ export default {
   float: left;
   width: 93%;
 }
-
-
 
 h2 {
   text-align: left;
@@ -134,7 +132,6 @@ input {
   height: auto;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 1%;
   background-color: #ffffff;
 }
 

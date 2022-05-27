@@ -142,6 +142,7 @@ export default {
   background-color: #ECDFF4;
   height: 120vh;
   position: relative;
+  padding-top: 4rem;
 
 }
 
@@ -185,10 +186,9 @@ input {
 
 .right {
   text-align: right;
-  position: absolute;
-  left: 84.68%;
-  top: 2.83%;
-  bottom: 76.23%;
+  position: relative;
+  left: 200%;
+  top: 5%;
 }
 
 .edit {
