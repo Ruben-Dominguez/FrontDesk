@@ -15,6 +15,7 @@ import AgregarFrontdesk from '../views/AgregarFrontdesk.vue'
 import FrontDeskView from '../views/FrontDeskView.vue'
 import MembresiasView from '../views/MembresiasView.vue'
 import EquipamientosView from '../views/EquipamientosView.vue'
+import EditFrontDeskView from '../views/EditFrontDeskView.vue'
 
 
 const routes = [
@@ -32,6 +33,7 @@ const routes = [
   {path: '/campaign-edit', name: 'EditCampaign',component: EditCampaignView},
   {path: '/gimnasios', name: 'Gimnasios',component: GimnasiosView},
   {path: '/frontdesk', name: 'FrontDeskInfo',component: FrontDeskView},
+  {path: '/frontdesk-edit', name: 'FrontDeskEdit',component: EditFrontDeskView},
   {path: '/membresias', name: 'Membresias',component: MembresiasView},
   {path: '/equipamientos', name: 'Equipamientos',component: EquipamientosView},
 ]
