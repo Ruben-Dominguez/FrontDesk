@@ -356,10 +356,10 @@
     background-color: #ECDFF4;
     border-radius: 20px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 10%;
+    padding-top: 16%;
   }
 
   .gym-col {
@@ -368,6 +368,7 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 20px 20px 20px 20px;
+    padding: 2rem;
   }
 
   .form-container{
