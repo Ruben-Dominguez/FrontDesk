@@ -10,6 +10,151 @@
             </div>
           </div>
           <div id="gimnasios">
+            <b-row>
+              <b-col md="3">
+                <b-card
+                title="Gimnasio 1"
+                tag="article"
+                style="max-width:auto"
+                class="mb-2"
+                >
+                  <div >
+                    <img alt="gym-info"  class="img-gym" src="../assets/images/gimnasio1.jpg" top>
+                  </div>
+                  
+                  <b-button variant="primary">
+
+                  </b-button>
+                  <b-card-text class="text-left">
+                    <h6>Teléfono</h6>
+                    <p>  Teléfono</p>
+
+                    <h6>Dirección postal</h6>
+                    <p>  Nombre de calle</p>
+                    <p>  #número</p>
+                    <p>  Colonia, código postal</p>
+                    <p>  Estado, Ciudad</p>
+
+                    <h6>Mensualidad</h6>
+                    <p>  Mensualidad</p>
+
+                    <h6>Aforo</h6>
+                    <p>  Aforo</p>
+
+                    <h6>Aforo permitido</h6>
+                    <p>  Aforo permitido</p>
+                  </b-card-text>
+                </b-card>
+              </b-col>
+              
+              <b-col md="3">
+                <b-card
+                title="Gimnasio 1"
+                tag="article"
+                style="max-width:auto"
+                class="mb-2"
+                >
+                  <div>
+                    <img alt="gym-info" class="img-gym" src="../assets/images/gimnasio1.jpg" top>
+                  </div>
+                  
+                  <b-button variant="primary">
+
+                  </b-button>
+                  <b-card-text class="text-left">
+                    <h6>Teléfono</h6>
+                    <p>  Teléfono</p>
+
+                    <h6>Dirección postal</h6>
+                    <p>  Nombre de calle</p>
+                    <p>  #número</p>
+                    <p>  Colonia, código postal</p>
+                    <p>  Estado, Ciudad</p>
+
+                    <h6>Mensualidad</h6>
+                    <p>  Mensualidad</p>
+
+                    <h6>Aforo</h6>
+                    <p>  Aforo</p>
+
+                    <h6>Aforo permitido</h6>
+                    <p>  Aforo permitido</p>
+                  </b-card-text>
+                </b-card>
+              </b-col>
+
+              <b-col md="3">
+                <b-card
+                title="Gimnasio 1"
+                tag="article"
+                style="max-width:auto"
+                class="mb-2"
+                >
+                  <div>
+                    <img alt="gym-info" class="img-gym" src="../assets/images/gimnasio1.jpg" top>
+                  </div>
+                  
+                  <b-button variant="primary">
+
+                  </b-button>
+                  <b-card-text class="text-left">
+                    <h6>Teléfono</h6>
+                    <p>  Teléfono</p>
+
+                    <h6>Dirección postal</h6>
+                    <p>  Nombre de calle</p>
+                    <p>  #número</p>
+                    <p>  Colonia, código postal</p>
+                    <p>  Estado, Ciudad</p>
+
+                    <h6>Mensualidad</h6>
+                    <p>  Mensualidad</p>
+
+                    <h6>Aforo</h6>
+                    <p>  Aforo</p>
+
+                    <h6>Aforo permitido</h6>
+                    <p>  Aforo permitido</p>
+                  </b-card-text>
+                </b-card>
+              </b-col>
+
+              <b-col md="3">
+                <b-card
+                title="Gimnasio 1"
+                tag="article"
+                style="max-width:auto"
+                class="mb-2"
+                >
+                  <div>
+                    <img alt="gym-info" class="img-gym" src="../assets/images/gimnasio1.jpg" top>
+                  </div>
+                  
+                  <b-button variant="primary">
+
+                  </b-button>
+                  <b-card-text class="text-left">
+                    <h6>Teléfono</h6>
+                    <p>  Teléfono</p>
+
+                    <h6>Dirección postal</h6>
+                    <p>  Nombre de calle</p>
+                    <p>  #número</p>
+                    <p>  Colonia, código postal</p>
+                    <p>  Estado, Ciudad</p>
+
+                    <h6>Mensualidad</h6>
+                    <p>  Mensualidad</p>
+
+                    <h6>Aforo</h6>
+                    <p>  Aforo</p>
+
+                    <h6>Aforo permitido</h6>
+                    <p>  Aforo permitido</p>
+                  </b-card-text>
+                </b-card>
+              </b-col>
+            </b-row>
           </div>
         </b-col>
       </b-row>
@@ -296,14 +441,11 @@
     width: 100%; 
     height: 100%;
     overflow: hidden;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
     
   }
 
   .modal-content {
     display: flex;
-    background-color: #fefefe;
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -347,4 +489,12 @@
     width: auto%;
   }
   
+  .text-left{
+    text-align: left !important;
+    padding: .5rem .5rem .5rem .5rem;
+  }
+
+  .img-gym{
+    max-width:100%;
+  }
 </style>
